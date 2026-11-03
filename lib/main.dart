@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
     ];
 
     return Scaffold(
-      appBar: AppBar(title: const Text('City Tour')),
+      appBar: AppBar(title: const Text('City Tour')), // judul / tittle
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
