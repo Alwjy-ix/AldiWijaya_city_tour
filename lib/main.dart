@@ -11,19 +11,26 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'City Tour',
-      color: Colors.blue,
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData( // warna
+        primarySwatch: Colors.blue,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.blue,
+          foregroundColor: Colors.white,
+        ),
+      ),
       home: const HomeScreen(),
     );
   }
 }
+
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    const imageUrls = [
+    const imageUrls = [ // gambar
       'https://picsum.photos/id/162/300/200',
       'https://picsum.photos/id/164/300/200',
       'https://picsum.photos/id/174/300/200',
@@ -62,7 +69,7 @@ class HomeScreen extends StatelessWidget {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(12.0),
                         child: Image.network(
-                          imageUrl,
+                          imageUrl, 
                           width: 150,
                           height: 300,
                           fit: BoxFit.cover,
