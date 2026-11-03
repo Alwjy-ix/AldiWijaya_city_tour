@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//void main
 void main() {
   runApp(const MyApp());
 }
@@ -28,7 +29,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const imageUrls = [
+    const imageUrls = [ // list gambar
       'https://picsum.photos/id/162/300/200',
       'https://picsum.photos/id/164/300/200',
       'https://picsum.photos/id/174/300/200',
